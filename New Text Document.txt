@@ -1,0 +1,45 @@
+
+******************************************************
+
+
+Create an application for a travel company to record its trips. The company offers two types of trips: "InTravel" for domestic trips and "OutTravel" for international trips. The international trips are further categorized into "FunTravel" for recreational trips and "RelTravel" for religious trips.
+
+1. Description of Variables:
+
+- For "FunTravel" fields:
+  - TravelNo (Trip number)
+  - FromDate (Trip start date)
+  - NoOfDays (Number of days for the trip)
+  - Destination (Trip destination)
+  - Price (Trip cost)
+  - IsVisa (Whether visa payment is allowed)
+
+- Additional fields for domestic trips (InTravel):
+  - Transportation (Flight or Bus)
+
+- Additional fields for international trips (OutTravel):
+  - Airline (Airline company)
+
+- Additional fields for religious trips (RelTravel):
+  - Path (Path of the trip, either "MadinaToMakka" or "MakkaToMadina")
+
+2. Description of Functions:
+
+- A general function named "Details" should be available for all types of trips. This function returns all trip data as a single string, with each piece of information separated by "t\'" or seven spaces.
+
+- The "ExtendDays" function allows adding extra days to the trip after it has been defined. It is a general function applicable to all trip types.
+
+- The "Discount" function is specific to "FunTravel" trips and is used to apply occasional discounts based on a given percentage of the original trip price.
+
+General Rules:
+
+1. Only instances of "InTravel," "OutTravel," and "RelTravel" can be created; direct instances of "Travel" or "OutTravel" are prohibited.
+
+2. Create an external class named "User" with static variables and important functions that do not rely on objects. It should contain static arrays for "UserNames" and "Passwords," where at least five user data entries are stored.
+
+3. Implement a static "Login Function" in the "User" class that takes a username and password as input and returns "true" if the credentials are valid and exist in the array; otherwise, it returns "false."
+
+4. Handle all exceptions thoroughly.
+
+Note: Since this is a project specification in Arabic, it is advisable to translate the class names, functions, and comments into English when implementing the project in C#.
+
