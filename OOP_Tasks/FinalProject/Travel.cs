@@ -12,6 +12,15 @@ namespace FinallProject
         protected string FromData, Destination;
         protected float Price;
 
+        public Travel()
+        {
+            TravelNo = 0;
+            NoOfDays = 0;
+            FromData = "";
+            Destination = "";
+            Price = 0.0f;
+        }
+
         public Travel(int TravelNo, string FromData, int NoOfDays, string Destination, float Price)
         {
             this.TravelNo = TravelNo;
@@ -19,11 +28,6 @@ namespace FinallProject
             this.FromData = FromData;
             this.Destination = Destination;
             this.Price = Price;
-        }
-
-        public Travel()
-        {
-
         }
 
         public int travel_no

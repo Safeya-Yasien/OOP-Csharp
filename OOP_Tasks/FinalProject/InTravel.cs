@@ -10,6 +10,11 @@ namespace FinallProject
     {
         string Transportation;
 
+        public InTravel(): base()
+        {
+            Transportation = "";
+        }
+
         public InTravel(int TravelNo, string FromData, int NoOfDays, string Destination, float Price, string Transportation):base(TravelNo, FromData, NoOfDays, Destination, Price)
         {
             this.Transportation = Transportation;
